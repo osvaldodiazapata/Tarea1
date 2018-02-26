@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.osvaldolabolitagmail.tarea_1.MainActivity">
+    <LinearLayout
+        android:id="@+id/recuadroImagen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/greenyellow"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/ImageViewImagen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/metro"/>
+    </LinearLayout>
+   <LinearLayout
+       android:id="@+id/recuadroBotones"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="horizontal"
+       android:background="@color/greenyellow">
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent">
+
+           <RadioGroup
+               android:id="@+id/radiogroup1"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:gravity="center">
+
+
+               <RadioButton
+                   android:id="@+id/radioButtonCuadrado"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="CUADRADO"
+                   android:onClick="onRadioButtonClicked"/>
+               <RadioButton
+                   android:id="@+id/radioButtonCirculo"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="CIRCULO"
+                   android:onClick="onRadioButtonClicked"/>
+               <RadioButton
+                   android:id="@+id/radioButtonTriangulo"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="TRIANGULO"
+                   android:onClick="onRadioButtonClicked"/>
+               <RadioButton
+                   android:id="@+id/radioButtonCubo"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="CUBO"
+                   android:onClick="onRadioButtonClicked"/>
+
+           </RadioGroup>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_gravity="center"
+           android:gravity="center"
+           >
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:id="@+id/textviewLado"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="LADO: "/>
+               <EditText
+                   android:id="@+id/edittextLado"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="lado  "
+                   android:inputType="numberDecimal"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:id="@+id/textviewBase"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="BASE: "/>
+               <EditText
+                   android:id="@+id/edittextBase"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="base"
+                   android:inputType="numberDecimal"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/textviewAltura"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ALTURA: "/>
+               <EditText
+                   android:id="@+id/edittextAltura"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="altura"
+                   android:inputType="numberDecimal"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/textviewRadio"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="RADIO: "/>
+               <EditText
+                   android:id="@+id/edittextRadio"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="radio"
+                   android:inputType="numberDecimal"/>
+           </LinearLayout>
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:orientation="vertical"
+           >
+
+           <Button
+               android:id="@+id/ButtonCalcular"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="CALCULAR"
+               android:onClick="btn_calcular"
+               />
+
+           <LinearLayout
+               android:id="@+id/layoutPerimetro"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:visibility="invisible"
+               >
+               <TextView
+                   android:id="@+id/TresultadoPerimetro"
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:text="Perimetro: "
+                   />
+
+               <TextView
+                   android:id="@+id/resultadoPerimetro"
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:text=""
+
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/layoutArea"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:visibility="invisible"
+               >
+               <TextView
+                   android:id="@+id/TresultadoArea"
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:text="Area: "
+                   />
+
+               <TextView
+                   android:id="@+id/resultadoArea"
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:text=""
+
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/layoutVolumen"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:visibility="invisible"
+               >
+               <TextView
+                   android:id="@+id/TresultadoVolumen"
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:text="Volumen: "
+                   />
+
+               <TextView
+                   android:id="@+id/resultadoVolumen"
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:text=""
+
+                   />
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+   </LinearLayout>
+
+</LinearLayout>
