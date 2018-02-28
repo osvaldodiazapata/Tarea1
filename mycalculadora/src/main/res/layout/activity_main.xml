@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,12 +10,45 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/black">
-        <EditText
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/white"
+            android:layout_weight="0.75"
+            android:orientation="horizontal"
+            android:background="@color/violet">
+            <EditText
+                android:id="@+id/editTextOperando_1"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:textSize="40dp"/>
+            <EditText
+                android:id="@+id/editTextOperacion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:textSize="40dp"/>
+            <EditText
+                android:id="@+id/editTextOperando_2"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:textSize="40dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/editTextResultado"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:background="@color/violet"
             android:enabled="false"
+            android:inputType="number"
+            android:textSize="40dp"
+
             />
 
         <LinearLayout
@@ -24,39 +56,23 @@
             >
             <Button
                 style="@style/StyleButton"
-                android:text="7"
+                android:text="@string/button_7"
+                android:id="@+id/button_7"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="8"
+                android:text="@string/button_8"
+                android:id="@+id/button_8"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="9"
+                android:text="@string/button_9"
+                android:id="@+id/button_9"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="+"
-                />
-        </LinearLayout>
-        <LinearLayout
-            style="@style/StyleLayout"
-            >
-            <Button
-                style="@style/StyleButton"
-                android:text="4"
-                />
-            <Button
-                style="@style/StyleButton"
-                android:text="5"
-                />
-            <Button
-                style="@style/StyleButton"
-                android:text="6"
-                />
-            <Button
-                style="@style/StyleButton"
-                android:text="-"
+                android:text="@string/button_suma"
+                android:id="@+id/button_suma"
                 />
         </LinearLayout>
         <LinearLayout
@@ -64,19 +80,23 @@
             >
             <Button
                 style="@style/StyleButton"
-                android:text="1"
+                android:text="@string/button_4"
+                android:id="@+id/button_4"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="2"
+                android:text="@string/button_5"
+                android:id="@+id/button_5"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="3"
+                android:text="@string/button_6"
+                android:id="@+id/button_6"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="*"
+                android:text="@string/button_resta"
+                android:id="@+id/button_resta"
                 />
         </LinearLayout>
         <LinearLayout
@@ -84,19 +104,47 @@
             >
             <Button
                 style="@style/StyleButton"
-                android:text="."
+                android:text="@string/button_1"
+                android:id="@+id/button_1"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="0"
+                android:text="@string/button_2"
+                android:id="@+id/button_2"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="="
+                android:text="@string/button_3"
+                android:id="@+id/button_3"
                 />
             <Button
                 style="@style/StyleButton"
-                android:text="/"
+                android:text="@string/button_multiplicacion"
+                android:id="@+id/button_multiplicacion"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/StyleLayout"
+            >
+            <Button
+                style="@style/StyleButton"
+                android:text="@string/button_punto"
+                android:id="@+id/button_punto"
+                />
+            <Button
+                style="@style/StyleButton"
+                android:text="@string/button_0"
+                android:id="@+id/button_0"
+                />
+            <Button
+                style="@style/StyleButton"
+                android:text="@string/button_igual"
+                android:id="@+id/button_igual"
+                />
+            <Button
+                style="@style/StyleButton"
+                android:text="@string/button_division"
+                android:id="@+id/button_division"
                 />
         </LinearLayout>
 
