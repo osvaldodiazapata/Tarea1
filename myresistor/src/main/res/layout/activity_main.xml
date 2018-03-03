@@ -10,35 +10,123 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/colorAccent"
-        android:radius="15dp"
+        android:background="@color/blanchedalmond"
+        android:radius="150dp"
+
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:radius="15dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/resistencia1"
+            android:layout_marginTop="30dp"
             >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/resistencia1"
-                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="78dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="110dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/banda_1"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="fill_parent"
+                    />
+                <TextView
+                    android:id="@+id/banda_2"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorAccent"/>
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="fill_parent"
+                    />
+                <TextView
+                    android:id="@+id/banda_3"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorAccent"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent"
+                    />
+                <TextView
+                    android:id="@+id/Tolerancia"
+                    android:layout_width="16dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorAccent"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/coral">
             <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                
+                android:id="@+id/SpinBanda1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+            </Spinner>
+            <Spinner
+                android:id="@+id/SpinBanda2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </Spinner>
+            <Spinner
+                android:id="@+id/SpinBanda3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </Spinner>
+            <Spinner
+                android:id="@+id/SpinBanda4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
             </Spinner>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/antiquewhite">
+            >
+            <TextView
+                android:id="@+id/TextvierResultado"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="Resultado"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:radius="15dp"
-            android:background="@color/colorPrimary"
-            ></LinearLayout>
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bandasresistencias"/>
+        </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
