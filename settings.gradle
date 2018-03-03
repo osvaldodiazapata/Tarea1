@@ -1,1 +1,1 @@
-include ':app', ':mycalculadora'
+include ':app', ':mycalculadora', ':myresistor'
