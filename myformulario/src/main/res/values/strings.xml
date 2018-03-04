@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Myformulario</string>
+    <string name="titulo">Mi formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="login">Login: </string>
+    <string name="password">Password:</string>
+    <string name="rpassword">repetir Password:</string>
+    <string name="correo">Correo:</string>
+    <string name="guardar">Aceptar</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="pasatiempos">Pasa Tiempo</string>
+    <string name="nadar">Nadar</string>
+    <string name="bailar">Bailar</string>
+    <string name="correr">Correr</string>
+    <string name="cine">Cine</string>
+</resources>
