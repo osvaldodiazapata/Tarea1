@@ -105,6 +105,15 @@ public class MainActivity extends AppCompatActivity {
                 editTextoperacion.setText("/");
                 Flag = 4;
                 break;
+            case R.id.button_punto:
+                /*if (!editTextoperacion.getText().toString().isEmpty()){
+
+
+                }else{
+
+                }*/
+                fill_operando(".");
+                break;
             case R.id.button_igual:
                 if(!editTextoperando2.getText().toString().isEmpty()) {
                     operando_1 = Double.parseDouble(editTextoperando1.getText().toString());
