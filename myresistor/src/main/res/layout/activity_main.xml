@@ -35,7 +35,7 @@
                     android:id="@+id/banda_1"
                     android:layout_width="20dp"
                     android:layout_height="fill_parent"
-                    android:background="@color/colorPrimaryDark"/>
+                    android:background="@color/chartreuse"/>
                 <TextView
                     android:layout_width="14dp"
                     android:layout_height="fill_parent"
@@ -44,7 +44,7 @@
                     android:id="@+id/banda_2"
                     android:layout_width="20dp"
                     android:layout_height="fill_parent"
-                    android:background="@color/colorAccent"/>
+                    android:background="@color/chartreuse"/>
                 <TextView
                     android:layout_width="14dp"
                     android:layout_height="fill_parent"
@@ -53,7 +53,7 @@
                     android:id="@+id/banda_3"
                     android:layout_width="20dp"
                     android:layout_height="fill_parent"
-                    android:background="@color/colorAccent"/>
+                    android:background="@color/chartreuse"/>
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="fill_parent"
@@ -62,7 +62,7 @@
                     android:id="@+id/Tolerancia"
                     android:layout_width="16dp"
                     android:layout_height="fill_parent"
-                    android:background="@color/colorAccent"/>
+                    android:background="@color/chartreuse"/>
             </LinearLayout>
 
 
@@ -77,7 +77,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:textAlignment="center">
+                android:textAlignment="center"
+                >
             </Spinner>
             <Spinner
                 android:id="@+id/SpinBanda2"

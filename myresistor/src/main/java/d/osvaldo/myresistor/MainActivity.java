@@ -48,33 +48,43 @@ public class MainActivity extends AppCompatActivity {
                 switch (i){
                     case 1:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.black));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.black));
                         break;
                     case 2:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.sienna));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.sienna));
                         break;
                     case 3:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.red));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.red));
                         break;
                     case 4:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.orange));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.orange));
                         break;
                     case 5:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.yellow));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.yellow));
                         break;
                     case 6:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.green));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.green));
                         break;
                     case 7:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.blue));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.blue));
                         break;
                     case 8:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.violet));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.violet));
                         break;
                     case 9:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.gray));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.gray));
                         break;
                     case 10:
                         colorBanda1.setBackgroundColor(getResources().getColor(R.color.white));
+                        Banda1.setBackgroundColor(getResources().getColor(R.color.white));
                         break;
                 }
                 valorBanda1 = i-1;
@@ -93,33 +103,43 @@ public class MainActivity extends AppCompatActivity {
                 switch (i){
                     case 1:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.black));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.black));
                         break;
                     case 2:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.sienna));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.sienna));
                         break;
                     case 3:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.red));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.red));
                         break;
                     case 4:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.orange));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.orange));
                         break;
                     case 5:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.yellow));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.yellow));
                         break;
                     case 6:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.green));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.green));
                         break;
                     case 7:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.blue));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.blue));
                         break;
                     case 8:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.violet));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.violet));
                         break;
                     case 9:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.gray));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.gray));
                         break;
                     case 10:
                         colorBanda2.setBackgroundColor(getResources().getColor(R.color.white));
+                        Banda2.setBackgroundColor(getResources().getColor(R.color.white));
                         break;
                 }
                 valorBanda2 = i-1;
@@ -138,33 +158,43 @@ public class MainActivity extends AppCompatActivity {
                 switch (i){
                     case 1:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.black));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.black));
                         break;
                     case 2:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.sienna));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.sienna));
                         break;
                     case 3:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.red));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.red));
                         break;
                     case 4:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.orange));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.orange));
                         break;
                     case 5:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.yellow));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.yellow));
                         break;
                     case 6:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.green));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.green));
                         break;
                     case 7:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.blue));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.blue));
                         break;
                     case 8:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.violet));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.violet));
                         break;
                     case 9:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.gray));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.gray));
                         break;
                     case 10:
                         colorBanda3.setBackgroundColor(getResources().getColor(R.color.white));
+                        Banda3.setBackgroundColor(getResources().getColor(R.color.white));
                         break;
                 }
                 valorbanda3 = i-1;
@@ -183,15 +213,18 @@ public class MainActivity extends AppCompatActivity {
                 switch (i){
                     case 1:
                         colorBanda4.setBackgroundColor(getResources().getColor(R.color.red));
+                        tolerancia.setBackgroundColor(getResources().getColor(R.color.red));
                         toler = 2;
                         break;
                     case 2:
                         colorBanda4.setBackgroundColor(getResources().getColor(R.color.gold));
+                        tolerancia.setBackgroundColor(getResources().getColor(R.color.gold));
                         toler = 5;
                         break;
                     case 3:
                         toler = 10;
                         colorBanda4.setBackgroundColor(getResources().getColor(R.color.silver));
+                        tolerancia.setBackgroundColor(getResources().getColor(R.color.silver));
                         break;
                 }
                 calcular();
@@ -208,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
     public void calcular (){
         resultado = 0;
         resultado = (int) (((valorBanda1*10)+valorBanda2)*Math.pow(10, valorbanda3));
-        Resultado.setText(String.valueOf(resultado +" +/- "+ toler + "%"));
+        Resultado.setText(String.valueOf(resultado +"+/-"+ toler + "%"));
 
     }
 }
