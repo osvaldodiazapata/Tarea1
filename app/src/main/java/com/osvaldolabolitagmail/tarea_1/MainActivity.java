@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
     public void btn_calcular(View view){
         switch (FLAG){
             case 1:
-                FLAG = 0;
+                //FLAG = 0;
                 if (!editTextLado.getText().toString().isEmpty()){
                     LADO = Double.parseDouble(editTextLado.getText().toString());
                     PERIMETRO = 4 * LADO;
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 2:
-                FLAG = 0;
+                //FLAG = 0;
                 if (!edittextRadio.getText().toString().isEmpty()){
                     RADIO = Double.parseDouble(edittextRadio.getText().toString());
                     PERIMETRO = 2 *Math.PI*RADIO;
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 3:
-                FLAG = 0;
+                //FLAG = 0;
                 if (!edittextBase.getText().toString().isEmpty() && !edittextAltura.getText().toString().isEmpty()){
                     BASE = Double.parseDouble(edittextBase.getText().toString());
                     ALTURA = Double.parseDouble(edittextAltura.getText().toString());
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case 4:
-                FLAG = 0;
+                //FLAG = 0;
                 if (!editTextLado.getText().toString().isEmpty()){
                     LADO = Double.parseDouble(editTextLado.getText().toString());
                     VOLUMEN = LADO*LADO*LADO;
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
             default:
-                Toast.makeText(this, "Selecciona alguna figura", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Ninguno Seleccionado", Toast.LENGTH_SHORT).show();
         }
 
     }
