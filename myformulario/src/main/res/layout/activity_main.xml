@@ -10,13 +10,6 @@
     android:orientation="vertical"
     android:background="@color/bisque">
 
-    <TextView
-        style="@style/StyleTextview"
-        android:layout_width="match_parent"
-        android:text="@string/titulo"
-        android:textColor="@color/white"
-        />
-
     <LinearLayout
         style="@style/StyleLinearLayout">
         <TextView
@@ -65,34 +58,45 @@
             android:inputType="textEmailAddress"
             android:id="@+id/eCorreo"/>
     </LinearLayout>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/rMasculino"
-            android:layout_width="wrap_content"
+    <LinearLayout
+        style="@style/StyleLinearLayout"
+        >
+        <TextView
+            style="@style/StyleTextview"
+            android:text="@string/genero"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/masculino"
-            android:checked="true"
-            android:onClick="onRadioButtonClicked"/>
-        <RadioButton
-            android:id="@+id/rFemenino"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/femenino"
-            android:onClick="onRadioButtonClicked"/>
-    </RadioGroup>
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/masculino"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/rFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/femenino"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+    </LinearLayout>
 
     <LinearLayout
         style="@style/StyleLinearLayout">
         <Button
             android:id="@+id/bFecha"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/fechaNaci"
             android:textSize="12sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:background="@color/mediumaquamarine"/>
         <EditText
             style="@style/StyleEdittext"
             android:id="@+id/eFecha"
@@ -100,8 +104,8 @@
     </LinearLayout>
 
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:id="@+id/sDepartamento"
+        style="@style/StyleSpinner">
 
     </Spinner>
 
@@ -153,14 +157,17 @@
         android:textColor="@color/colorPrimaryDark"
         android:background="@color/yellow"
         android:textSize="20sp"
-        android:id="@+id/bGuardar"
-        android:onClick="onButtonClicked"/>
+        android:id="@+id/bGuardar"/>
+
     <LinearLayout
         style="@style/StyleLinearLayout"
         android:layout_weight="4">
         <TextView
+            android:id="@+id/tGuardar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:textStyle="bold"
             />
     </LinearLayout>
 
